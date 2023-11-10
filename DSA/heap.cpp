@@ -13,11 +13,12 @@ int main(int argc, char *argv[]) {
 
   vector<int> arr = {1, 4, 2, 3};
   cout << "arr ";
-  for (int i = 0; i < arr.size(); i++) {
+  int n = arr.size();
+  for (int i = 0; i < n; i++) {
     min_heap.push(arr[i]);
     max_heap.push(arr[i]);
     cout << arr[i];
-    if (i != arr.size() - 1) cout << ", ";
+    if (i != n - 1) cout << ", ";
   }
   cout << endl;
   cout << "min_heap top -> bottom ";
